@@ -1,0 +1,23 @@
+.card {
+  margin-bottom: 15px;
+}
+
+.preview {
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+
+.header {
+  height: 15vh;
+  padding-top: 20px;
+}
+
+.content {
+  height: 85vh;
+  padding-bottom: 30px;
+}
+
+.paragraph {
+  margin-bottom: 7px;
+}
