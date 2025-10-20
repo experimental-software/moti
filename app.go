@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
+	"moti/core"
 )
 
 // App struct
@@ -24,4 +25,8 @@ func (a *App) startup(ctx context.Context) {
 // Greet returns a greeting for the given name
 func (a *App) Greet(name string) string {
 	return fmt.Sprintf("Hello %s, It's show time!", name)
+}
+
+func (a *App) GetExampleParagraphs() []string {
+	return core.ReadDocxFile("/Users/jmewes/src/experimental-software/moti/core/t/man-know-thyself.docx")
 }

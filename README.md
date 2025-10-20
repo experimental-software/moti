@@ -2,7 +2,7 @@
 
 # Moti [![Stability: Experimental](https://masterminds.github.io/stability/experimental.svg)](https://masterminds.github.io/stability/experimental.html)
 
-a cross-platform desktop app for searching in text files
+a cross-platform desktop app for searching text in DOCX documents
 
 ## Technology stack
 
@@ -12,8 +12,16 @@ a cross-platform desktop app for searching in text files
 
 ## Development
 
+### Run Wails app
+
 ```sh
 wails dev
+```
+
+### Run CLI
+
+```sh
+go run main_cli.go
 ```
 
 ## Maintenance
