@@ -12,6 +12,11 @@ a cross-platform desktop app for searching text in DOCX documents
 
 ## Development
 
+### Dependencies
+
+- go
+- nodejs
+
 ### Run Wails app
 
 ```sh
@@ -20,8 +25,11 @@ wails dev
 
 ### Run CLI
 
+The core functionality of the app can be tested with a command-line interface:
+
 ```sh
-go run main_cli.go
+go run main_cli.go -h
+go run main_cli.go create index -b $PATH_TO_DOCUMENTS -i ./build/bleeve-index
 ```
 
 ## Maintenance
@@ -45,7 +53,3 @@ wails build -platform windows/amd64
 
 - [DocFetcher](https://docfetcher.sourceforge.io/)
 - [Copernic Desktop Search](https://copernic.com)
-
-## License
-
-[MIT](./LICENSE)

@@ -9,11 +9,16 @@ import (
 
 var rootCmd = &cobra.Command{
 	Use:   "moti",
-	Short: "a cross-platform CLI app for searching text in DOCX documents",
+	Short: "testing tool for the core functionality of the desktop app",
 
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("Executing moti")
 	},
+}
+
+func init() {
+	rootCmd.CompletionOptions.DisableDefaultCmd = true
+	rootCmd.AddCommand(createCmd)
 }
 
 func Execute() {
